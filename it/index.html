@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Home | Website</title>
+  </head>
+  <body id="home">
+    <header class="hero">
+      <div class="navbar top" id="navbar">
+        <h1 class="logo">
+          <span class="text-primary"
+            ><i class="fab fa-redhat"></i> <strong>Scrumpy</strong></span
+          ><span class="text-tertiary">Geo</span>
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#cases">Work</a></li>
+            <li class="lang">It  <i class="fas fa-chevron-down"></i>
+              <ul>
+                <li><a href="../En/index.html">En</a></li>
+                <li><a href="../fr/index.html">Fr</a></li>
+              </ul>
+            </li>
+          </ul>
+         
+        </nav>
+      </div>
+      <div class="content">
+        <h1>Full Stack Web Developer</h1>
+        <p>...with emphasis on front end</p>
+        <a href="about.html" class="btn"
+          ><i class="fas fa-chevron-right"></i> <strong>Read More...</strong></a
+        >
+      </div>
+    </header>
+    <!--  -->
+    <main>
+      <!-- About Section: Icons  -->
+      <section id="about" class="icons">
+        <div class="flex-items">
+          <div>
+            <i class="fab fa-html5 fa-2x"></i>
+            <div>
+              <h3>HTML 5</h3>
+              <p>HTML using semantic tags</p>
+            </div>
+          </div>
+          <div>
+            <i class="fab fa-css3 fa-2x"></i>
+            <div>
+              <h3>CSS3</h3>
+              <p>Cascading Style Sheets for styling</p>
+            </div>
+          </div>
+          <div>
+            <i class="fab fa-js fa-2x"></i>
+            <div>
+              <h3>Javascript</h3>
+              <p>Javascript versions ES5 - ES7</p>
+            </div>
+          </div>
+          <div>
+            <i class="fab fa-react fa-2x"></i>
+            <div>
+              <h3>ReactJS</h3>
+              <p>React framework for Javascript</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Section: Extra bits -->
+      <section class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="../img/globe-2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-primary">
+              <h4>Multilingual and International Experience</h4>
+              <h2>
+                Experience ranging from small companies to multinational
+                corporations
+              </h2>
+              <p>
+                Client facing experience in North and South America, Europe and
+                the Far East working both as part of a team and as sole
+                developer on-site liaising with head office.
+              </p>
+              <a href="about.html" class="btn btn-outline"
+                ><i class="fas fa-chevron-right"></i> <strong>Read More...</strong></a
+              >
+            </div>
+          
+        </div>
+      </section>
+
+      <!-- Photo Gallery Section: Work/Cases -->
+      <section id="cases" class="cases flex-grid section-padding">
+        <header class="section-header">
+          <h4>Some of my work</h4>
+          <h2>Functional Websites</h2>
+          <p>A selection of websites on heroku from my github account (external links)</p>
+        </header>
+        <div class="row">
+          <div class="column">
+            <a href="https://art-replicas.herokuapp.com/" target="_blank">
+              <img src="../img/art-replicas4.png" alt="" />
+            </a>
+          </div>
+          <div class="column">
+            <a href="https://contacts-with-auth01.herokuapp.com/" target="_blank">
+              <img src="../img/contacts1.png" alt="" />
+            </a>
+          </div>
+          <div class="column">
+            <a href="https://room-share-scrumpeggio.herokuapp.com/" target="_blank">
+              <img src="../img/roomshare2.png" alt="" />
+            </a>
+          </div>
+          <div class="column">
+            <a href="https://react-contract-locations.herokuapp.com/" target="_blank">
+              <img src="../img/contract-locations-2.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--  -->
+    <footer class="footer bg-dark">
+      <div class="charities">
+        <a href="https://www.savethechildren.org.uk/"
+          ><i class="fa fa-child fa-2x"></i> Save The Children</a
+        >
+        <a href="https://www.barnardos.org.uk/"
+          ><i class="fas fa-house-user fa-2x"></i> Barnardos</a
+        >
+        <a href="https://www.nspcc.org.uk/"
+          ><i class="fas fa-hand-holding-heart fa-2x"></i> NSPCC</a
+        >
+        <a href="https://www.gosh.org/"
+          ><i class="fas fa-procedures fa-2x"></i> Great Ormond St Hospital</a
+        >
+      </div>
+      <p>Copyright &copy; 2021 - ScrumpyGeo</p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Smooth Scrolling - uses jQuery
+      $('#navbar a').on('click', function (e) {
+        if (this.hash !== '') {
+          e.preventDefault()
+
+          const hash = this.hash
+
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top - 70,
+            },
+            800
+          )
+        }
+      })
+    </script>
+  </body>
+</html>
