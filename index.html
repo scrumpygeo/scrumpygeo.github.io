@@ -24,15 +24,22 @@
         <nav>
           <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#cases">Work</a></li>
+            <li class="lang">En  <i class="fas fa-chevron-down"></i>
+              <ul>
+                <li><a href="fr/index.html">Fr</a></li>
+                <li><a href="it/index.html">It</a></li>
+              </ul>
+            </li>
           </ul>
+         
         </nav>
       </div>
       <div class="content">
         <h1>Full Stack Web Developer</h1>
         <p>...with emphasis on front end</p>
-        <a href="about.html" class="btn"
+        <a href="#about" class="btn"
           ><i class="fas fa-chevron-right"></i> <strong>Read More...</strong></a
         >
       </div>
@@ -92,19 +99,98 @@
                 the Far East working both as part of a team and as sole
                 developer on-site liaising with head office.
               </p>
-              <a href="about.html" class="btn btn-outline"
+              <a href="#more-about" class="btn btn-outline"
                 ><i class="fas fa-chevron-right"></i> <strong>Read More...</strong></a
               >
             </div>
           
         </div>
       </section>
+<!-- --------------------------------------------------------------- -->
+      <!-- Extra - about - old about.html -->
+      <section id="more-about">
+          <article class="flex-columns">
+            <div class="row">
+              <div class="column">
+                <div class="column-1">
+                  <img src="img/engineering1.jpg" alt="" />
+                </div>
+              </div>
+              <div class="column">
+                <div class="column-2 bg-light">
+                  <h2>Visual Basic and SAP</h2>
+                  <p>
+                    I started my IT career developing in Visual Basic and MS Access
+                    creating inventory management systems for shopkeepers.
+                  </p>
+                  <p>
+                    Shortly after I had the opportunity to move into larger systems
+                    with SAP R/3, developing custom programs using the ABAP language
+                    and importing legacy data into SAP databases. Clients were
+                    multinational companies in a variety of industries, including
+                    FMCG, Engineering, Electronics, Automotive and Oil and reports
+                    often needed to be multilingual.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="flex-columns flex-reverse">
+            <div class="row">
+              <div class="column">
+                <div class="column-1">
+                  <img src="img/computer1.jpg" alt="" />
+                </div>
+              </div>
+              <div class="column">
+                <div class="column-2 bg-dark">
+                  <h2>Microsoft Dynamic AX</h2>
+                  <p>
+                    After several years as a senior consultant in SAP I had the
+                    opportunity to move into Microsoft's ERP solution, Axapta (later
+                    called MS Dynamics AX). This allowed me to leverage my
+                    experience in ERP with my prior knowledge in Visual Basic.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="flex-columns">
+            <div class="row">
+              <div class="column">
+                <div class="column-1">
+                  <img src="img/japan1.jpg" alt="" />
+                </div>
+              </div>
+              <div class="column">
+                <div class="column-2 bg-light">
+                  <h2>Web Development</h2>
+                  <p>
+                    I took the opportunity of some down time in 2013 to learn full
+                    stack web development, with HTML, CSS, JS and jQuery on the
+                    front end and PHP at the back end. The associated SQL database
+                    technology was virtually the same as with SAP so was quite easy
+                    to pick up.
+                  </p>
+                  <p>
+                    I subsequently expanded my web development experience with a
+                    SANS security course and in order to gain experience with a web
+                    framework, took coursework in Ruby on Rails development. I later
+                    extended this with coursework in a front end framework, ReactJS
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+      </section>
+
+      <!-- ----------------  end of added about page  -------------------------------- -->
 
       <!-- Photo Gallery Section: Work/Cases -->
       <section id="cases" class="cases flex-grid section-padding">
         <header class="section-header">
           <h4>Some of my work</h4>
-          <h2>Functional Websites</h2>
+          <h2>Websites</h2>
           <p>A selection of websites on heroku from my github account (external links)</p>
         </header>
         <div class="row">
@@ -158,7 +244,7 @@
 
     <script>
       // Smooth Scrolling - uses jQuery
-      $('#navbar a').on('click', function (e) {
+      $('a').on('click', function (e) {
         if (this.hash !== '') {
           e.preventDefault()
 
