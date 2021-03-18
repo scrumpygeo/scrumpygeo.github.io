@@ -396,6 +396,7 @@ img {
   .navbar ul li:hover ul li {
     padding-top: 1rem;
     padding-bottom: 1rem;
+    z-index: 1;
   }
 
   .about .content h1 {
