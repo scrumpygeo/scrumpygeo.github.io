@@ -239,7 +239,6 @@ img {
   display: none;
 }
 
-
 /* show nested ul when hovering */
 .navbar ul li:hover ul {
   display: flex;
@@ -247,7 +246,6 @@ img {
   position: absolute;
   width: 1.8rem;
   margin-left: 5px;
-  
 }
 
 .navbar ul li:hover ul li {
@@ -255,7 +253,7 @@ img {
   background: var(--primary-color);
   color: black;
   margin-left: -25px;
- } 
+}
 
 .navbar ul li:hover ul li a {
   color: black;
@@ -393,6 +391,11 @@ img {
     padding: 10px 10px;
     margin: 0 3px;
     z-index: 2;
+  }
+  /* nested menu item: languages */
+  .navbar ul li:hover ul li {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .about .content h1 {
