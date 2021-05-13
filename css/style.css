@@ -274,7 +274,8 @@ img {
 
 /* Hero  */
 .hero {
-  background: url('../img/london-aerial-30.jpg') no-repeat center center/cover;
+  background: url('../images/london-aerial-30.jpg') no-repeat center
+    center/cover;
   height: 100vh;
   position: relative;
   color: white;
@@ -300,7 +301,7 @@ img {
 }
 
 .hero.about {
-  background: url('../img/library1.jpg') no-repeat center center/cover;
+  background: url('../images/library1.jpg') no-repeat center center/cover;
   height: 30vh;
 }
 
