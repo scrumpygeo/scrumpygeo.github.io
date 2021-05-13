@@ -375,6 +375,18 @@ img {
   color: var(--tertiary-color);
 }
 
+/* Lightbox styling */
+
+.lb-data {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.lb-data .lb-caption a {
+  color: var(--tertiary-color);
+  font-size: larger;
+}
+
 /* ---------------------------------------------------------------- */
 
 /* Mobile: Tablet or smaller */
